@@ -1,0 +1,33 @@
+vi:
+  hello: "Hello world"
+  static_pages:
+    home:
+      name: "Trang Chủ"
+      this_is: "Đây là trang chủ cho"
+      ror_tutorial: "Hướng dẫn Ruby on Rails"
+      sample_app: "ứng dụng mẫu"
+    help:
+      name: "Trợ Giúp"
+      get_help: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại"
+      ror_help: "phần trợ giúp của Rails Tutorial"
+      see: "Để nhận trợ giúp về ứng dụng mẫu này, hãy xem"
+      ror_book: "sách Ruby on Rails Tutorial"
+    contact:
+      name: "Liên hệ"
+      contact_w: "Liên hệ với Hướng dẫn về Ruby on Rails về ứng dụng mẫu tại"
+      contact_page: "trang liên hệ"
+    about:
+      name: "Hướng dẫn Ruby On Rails"
+      the: "Các"
+      ror_tutorial: "Hướng dẫn Ruby On Rails"
+      is_a: "là một"
+      book: "cuốn sách"
+      and: "và"
+      ror: "Ruby on Rails"
+      screencast_series: "loạt screencast"
+      t_t_W_d_w: "để dạy phát triển web với"
+      aplication_tutorial: "Đây là ứng dụng mẫu cho hướng dẫn"
+  english: "Tiếng Anh"
+  vietnamese: "Tiếng Việt"
+  sample_app: "Ứng Dụng Mẫu"
+  name_app: "Ứng dụng mẫu Ruby on Rails Tutorial"

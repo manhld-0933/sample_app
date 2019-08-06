@@ -1,33 +1,32 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
   hello: "Hello world"
+  static_pages:
+    home:
+      name: "Home"
+      this_is: This is the home page for
+      ror_tutorial: "Ruby on Rails Tutorial"
+      sample_app: "sample application"
+    help:
+      name: "Help"
+      get_help: "Get help on the Ruby on Rails Tutorial at the"
+      ror_help: "Rails Tutorial help section"
+      see: " To get help on this sample app, see the"
+      ror_book: "Ruby on Rails Tutorial book"
+    contact:
+      name: "Contact"
+      contact_w: "Contact the Ruby on Rails Tutorial about the sample app at the"
+      contact_page: "contact page"
+    about:
+      name: "About"
+      the: "The"
+      ror_tutorial: "Ruby on Rails Tutorial"
+      is_a: is a
+      book: book
+      and: and
+      ror: Ruby on Rails
+      screencast_series: screencast series
+      t_t_W_d_w: to teach web development with
+    aplication_tutorial: This is the sample application for the tutorial
+  english: "English"
+  vietnamese: "Vietnames"
+  name_app: "Ruby on Rails Tutorial Sample App"
