@@ -1,11 +1,19 @@
 vi:
   hello: "Hello world"
+  layout:
+    by: "bởi"
+    news: "Mới"
+    logo: "ỨNG DỤNG MẪU"
   static_pages:
     home:
       name: "Trang Chủ"
+      well_come: "Chào mừng đến với ứng dụng mẫu"
       this_is: "Đây là trang chủ cho"
       ror_tutorial: "Hướng dẫn Ruby on Rails"
       sample_app: "ứng dụng mẫu"
+      sign_up: "Đăng kí ngay bây giờ!"
+      ror: Ruby on Rails
+      rails_logo: "Nhãn Rails"
     help:
       name: "Trợ Giúp"
       get_help: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại"
@@ -27,6 +35,11 @@ vi:
       screencast_series: "loạt screencast"
       t_t_W_d_w: "để dạy phát triển web với"
       aplication_tutorial: "Đây là ứng dụng mẫu cho hướng dẫn"
+    login:
+      name: "Đăng nhập"
+    sign_up:
+      name: "Đăng Kí"
+      sign_up_page: "Đây sẽ là trang đăng kí cho người dùng mới"
   english: "Tiếng Anh"
   vietnamese: "Tiếng Việt"
   sample_app: "Ứng Dụng Mẫu"
