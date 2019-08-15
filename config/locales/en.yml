@@ -4,6 +4,15 @@ en:
     by: "by"
     news: "News"
     logo: "SAMPLE APP"
+    account: "Account"
+    profile: "Profile"
+    settings: "Settings"
+    log_out: "Log out"
+  error_messages:
+    form_error: "The form contains"
+    error:
+      one: "%{count} error"
+      other: "%{count} errors"
   static_pages:
     home:
       name: "Home"
@@ -14,6 +23,7 @@ en:
       sign_up: "Sing up now!"
       ror: Ruby on Rails
       rails_logo: "Rails logo"
+      user_error: "User not found"
     help:
       name: "Help"
       get_help: "Get help on the Ruby on Rails Tutorial at the"
@@ -37,9 +47,20 @@ en:
       aplication_tutorial: This is the sample application for the tutorial
     login:
       name: "Login"
+      danger: "Invalid email/password combination"
+      email: "Email"
+      password: "Password"
+      signup_now: "Sign up now!"
+      new_user: "New user"
     sign_up:
       name: "Sign Up"
       sign_up_page: "This will be a signup page for new users"
+      success: "Welcome to the Sample App!"
+      user_name: "Name"
+      email: "Email"
+      password: "Password"
+      password_confirmation: "Password confirmation"
+      submit: "Create my account"
   english: "English"
   vietnamese: "Vietnames"
   name_app: "Ruby on Rails Tutorial Sample App"

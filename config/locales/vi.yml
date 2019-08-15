@@ -4,6 +4,15 @@ vi:
     by: "bởi"
     news: "Mới"
     logo: "ỨNG DỤNG MẪU"
+    account: "Tài khoản"
+    profile: "Thông tin tài khoản"
+    settings: "Cài đặt"
+    log_out: "Đăng xuất"
+  error_messages:
+    form_error: "Biểu mẫu có"
+    error:
+      one: "%{count} lỗi"
+      other: "%{count} lỗi"
   static_pages:
     home:
       name: "Trang Chủ"
@@ -14,6 +23,7 @@ vi:
       sign_up: "Đăng kí ngay bây giờ!"
       ror: Ruby on Rails
       rails_logo: "Nhãn Rails"
+      user_error: "Không tìm thấy người dùng"
     help:
       name: "Trợ Giúp"
       get_help: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại"
@@ -37,9 +47,20 @@ vi:
       aplication_tutorial: "Đây là ứng dụng mẫu cho hướng dẫn"
     login:
       name: "Đăng nhập"
+      danger: "Địa chỉ email hoặc mật khẩu không chính xác"
+      email: "Địa chỉ Email"
+      password: "Mật khẩu"
+      signup_now: "Đăng kí ngay!"
+      new_user: "Người dùng mới"
     sign_up:
       name: "Đăng Kí"
       sign_up_page: "Đây sẽ là trang đăng kí cho người dùng mới"
+      success: "Chào mừng đến với ứng dụng mẫu!"
+      user_name: "Tên"
+      email: "Địa chỉ Email"
+      password: "Mật khẩu"
+      password_confirmation: "Xác thực mật khẩu"
+      submit: "Tạo tài khoản"
   english: "Tiếng Anh"
   vietnamese: "Tiếng Việt"
   sample_app: "Ứng Dụng Mẫu"
