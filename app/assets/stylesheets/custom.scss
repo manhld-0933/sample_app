@@ -3,6 +3,7 @@
 
 /* mixins, variables, etc. */
 $gray-medium-light: #eaeaea;
+$color-bbb: #bbb;
 
 /* universal */
 $gray-medium-light: #eaeaea;
@@ -147,7 +148,7 @@ aside {
 
 /* forms */
 input, textarea, select, .uneditable-input {
-  border: 1px solid #bbb;
+  border: 1px solid $color-bbb;
   width: 100%;
   margin-bottom: 15px;
   @include box_sizing;

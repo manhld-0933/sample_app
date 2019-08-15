@@ -13,6 +13,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
+      log_in @user
       flash[:success] = t "static_pages.sign_up.success"
       redirect_to @user
     else
