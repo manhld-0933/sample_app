@@ -6,4 +6,4 @@ gravatar_size: 80
 gravatar_user_size: 50
 remember_me: "1"
 index_page: 15
-
+password_reset_expired: 2

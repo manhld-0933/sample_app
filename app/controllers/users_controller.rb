@@ -6,7 +6,7 @@ class UsersController < ApplicationController
 
   def index
     @users = User.activated.paginate page: params[:page],
-                                         per_page: Settings.index_page
+                                        per_page: Settings.index_page
   end
 
   def show

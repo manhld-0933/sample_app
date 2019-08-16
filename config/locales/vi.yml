@@ -55,8 +55,8 @@ vi:
       new_user: "Người dùng mới"
       remember_me: "Duy trì đăng nhập"
       load_user_danger: "Không tìm thấy người dùng"
-      not_active: "Tài khoản chưa được kích hoạt. "
-      check_mail: "Kiểm tra liên kết kích hoạt trong email của bạn."
+      not_active: "Tài khoản chưa được kích hoạt. Kiểm tra liên kết kích hoạt trong email của bạn."
+      forgot_pass: "(Quên mật khẩu)"
     sign_up:
       name: "Đăng Kí"
       sign_up_page: "Đây sẽ là trang đăng kí cho người dùng mới"
@@ -84,6 +84,17 @@ vi:
       you_sure: "Bạn chắc chứ?"
       danger: "Xóa không thành công"
     not_admin: "Bạn không phải là người quản trị"
+  forgot_pass:
+    name: "Quên mật khẩu"
+    submit: "Gửi"
+  reset_pass:
+    name: "Đặt lại mật khẩu"
+    email_send: "Email sent with password reset instructions"
+    email_not_found: "Không tìm thấy địa chỉ email"
+    pass_not_empty: "Mật khẩu không thể trống"
+    pass_reset: "Mật khẩu đã được đặt lại."
+    pass_expired: "Đặt lại mật khẩu đã hết hạn."
+    submit: "Cập nhật mật khẩu"
   mail:
     account_activation:
       subject: "Kích hoạt tài khoản"
@@ -92,6 +103,11 @@ vi:
       danger: "Liên kết kích hoạt tài khoản không hợp lệ"
       hi: "Xin chào"
       text_p: "Chào mừng đến với Ứng Dụng Mẫu! Nhấn vào liên kết để kích hoạt tài khoản của bạn."
+    password_reset:
+      subject: "Đặt lại mật khẩu"
+      text_p1: "Để đặt lại mật khẩu, hãy nhấp vào liên kết bên dưới:"
+      text_p2: "Liên kết này sẽ hết hạn sau hai giờ nữa."
+      text_p3: "Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này và mật khẩu của bạn sẽ giữ nguyên."
   english: "Tiếng Anh"
   vietnamese: "Tiếng Việt"
   sample_app: "Ứng Dụng Mẫu"
