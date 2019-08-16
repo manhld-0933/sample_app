@@ -52,6 +52,7 @@ en:
       password: "Password"
       signup_now: "Sign up now!"
       new_user: "New user"
+      remember_me: "Remember me on this computer"
     sign_up:
       name: "Sign Up"
       sign_up_page: "This will be a signup page for new users"

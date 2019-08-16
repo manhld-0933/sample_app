@@ -52,6 +52,7 @@ vi:
       password: "Mật khẩu"
       signup_now: "Đăng kí ngay!"
       new_user: "Người dùng mới"
+      remember_me: "Duy trì đăng nhập"
     sign_up:
       name: "Đăng Kí"
       sign_up_page: "Đây sẽ là trang đăng kí cho người dùng mới"
