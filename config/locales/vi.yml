@@ -101,6 +101,11 @@ vi:
     maxium_size: "Kích thước tối đa là 5MB. Vui lòng chọn kích thước nhỏ hơn!"
     you_sure: "Bạn chắc chứ?"
     post: "Đăng"
+  relationship:
+    following: "Đang theo dõi"
+    followers: "Người theo dõi"
+    follow: "Theo dõi"
+    unfollow: "Bỏ theo dõi"
   forgot_pass:
     name: "Quên mật khẩu"
     submit: "Gửi"
