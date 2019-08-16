@@ -25,6 +25,7 @@ vi:
       ror: Ruby on Rails
       rails_logo: "Nhãn Rails"
       user_error: "Không tìm thấy người dùng"
+      micropost_feed: "Tin bài đăng"
     help:
       name: "Trợ Giúp"
       get_help: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại"
@@ -84,6 +85,22 @@ vi:
       you_sure: "Bạn chắc chứ?"
       danger: "Xóa không thành công"
     not_admin: "Bạn không phải là người quản trị"
+  micropost:
+    create_success: "Tạo bài đăng thành công!"
+    destroy_success: "Xóa bài đăng thành công!"
+    destroy_danger: "Xóa bài đăng không thành công!"
+    view_my_profile: "Xem trang cá nhân"
+    delete: "xóa"
+    placeholder: "Nhập nội dung mới..."
+    picture_size: "phải nhỏ hơn 5MB"
+    micropost:
+      one: "%{count} bài đăng"
+      other: "%{count} bài đăng"
+    posted: "Đã đăng"
+    ago: "trước."
+    maxium_size: "Kích thước tối đa là 5MB. Vui lòng chọn kích thước nhỏ hơn!"
+    you_sure: "Bạn chắc chứ?"
+    post: "Đăng"
   forgot_pass:
     name: "Quên mật khẩu"
     submit: "Gửi"
