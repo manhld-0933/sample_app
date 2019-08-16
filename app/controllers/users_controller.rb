@@ -6,10 +6,12 @@ class UsersController < ApplicationController
 
   def index
     @users = User.activated.paginate page: params[:page],
-                                        per_page: Settings.index_page
+      per_page: Settings.index_page
   end
 
   def show
+    @microposts = @user.microposts.order_desc.paginate(page: params[:page],
+      per_page: Settings.micropost_per_page)
     return if @user.activated?
     flash[:danger] = t "static_pages.home.user_error"
     redirect_to root_path
@@ -51,13 +53,6 @@ class UsersController < ApplicationController
   end
 
   private
-
-  def logged_in_user
-    return if logged_in?
-    store_location
-    flash[:danger] = t "users.edit.logged_in_user"
-    redirect_to login_url
-  end
 
   def correct_user
     redirect_to root_url unless current_user? @user

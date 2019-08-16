@@ -25,6 +25,7 @@ en:
       ror: Ruby on Rails
       rails_logo: "Rails logo"
       user_error: "User not found"
+      micropost_feed: "Micropost Feed"
     help:
       name: "Help"
       get_help: "Get help on the Ruby on Rails Tutorial at the"
@@ -84,6 +85,23 @@ en:
       you_sure: "You sure?"
       danger: "Delete fail"
     not_admin: "You are not admin"
+  micropost:
+    create_success: "Micropost created!"
+    create_success: "Micropost create fail!"
+    destroy_success: "Micropost deleted"
+    destroy_danger: "Micropost delete fail"
+    view_my_profile: "view my profile"
+    delete: "delete"
+    placeholder: "Compose new micropost..."
+    picture_size: "should be less than 5MB"
+    micropost:
+      one: "%{count} micropost"
+      other: "%{count} microposts"
+    posted: "Posted"
+    ago: "ago."
+    maxium_size: "Maximum file size is 5MB. Please choose a smaller file."
+    you_sure: "You sure?"
+    post: "Post"
   forgot_pass:
     name: "Forgot password"
     submit: "Send"
