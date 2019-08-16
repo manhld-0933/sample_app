@@ -5,6 +5,7 @@ vi:
     news: "Mới"
     logo: "ỨNG DỤNG MẪU"
     account: "Tài khoản"
+    users_manager: "Quản lí người dùng"
     profile: "Thông tin tài khoản"
     settings: "Cài đặt"
     log_out: "Đăng xuất"
@@ -53,6 +54,7 @@ vi:
       signup_now: "Đăng kí ngay!"
       new_user: "Người dùng mới"
       remember_me: "Duy trì đăng nhập"
+      load_user_danger: "Không tìm thấy người dùng"
     sign_up:
       name: "Đăng Kí"
       sign_up_page: "Đây sẽ là trang đăng kí cho người dùng mới"
@@ -62,6 +64,22 @@ vi:
       password: "Mật khẩu"
       password_confirmation: "Xác thực mật khẩu"
       submit: "Tạo tài khoản"
+  users:
+    index:
+      all_users: "Tất cả tài khoản"
+    edit:
+      name: "Chỉnh sửa tài khoản"
+      h1: "Cập nhật hồ sơ của bạn"
+      submit: "Lưu thay đổi"
+      change: "Thay đổi"
+      success: "Hồ sơ đã được cập nhật"
+      logged_in_user: "Vui lòng đăng nhập."
+    destroy:
+      success: "Xóa thành công"
+      delete: "Xóa"
+      you_sure: "Bạn chắc chứ?"
+      danger: "Xóa không thành công"
+    not_admin: "Bạn không phải là người quản trị"
   english: "Tiếng Anh"
   vietnamese: "Tiếng Việt"
   sample_app: "Ứng Dụng Mẫu"

@@ -1,10 +1,14 @@
 class UsersController < ApplicationController
-  def show
-    @user = User.find_by id: params[:id]
-    return if @user
-    flash[:danger] = t "static_pages.home.user_error"
-    redirect_to root_path
+  before_action :logged_in_user, except: [:new, :show, :create]
+  before_action :load_user, except: [:index, :new, :create]
+  before_action :correct_user, only: [:edit, :update]
+  before_action :admin_user, only: :destroy
+
+  def index
+    @users = User.paginate page: params[:page], per_page: Settings.index_page
   end
+
+  def show; end
 
   def new
     @user = User.new
@@ -21,10 +25,54 @@ class UsersController < ApplicationController
     end
   end
 
+  def edit; end
+
+  def update
+    if @user.update_attributes(user_params)
+      flash[:success] = t "users.edit.success"
+      redirect_to @user
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    if @user.destroy
+      flash[:success] = t "users.destroy.success"
+    else
+      flash[:danger] = t "users.destroy.danger"
+    end
+      redirect_to users_url
+  end
+
   private
+
+  def logged_in_user
+    return if logged_in?
+    store_location
+    flash[:danger] = t "users.edit.logged_in_user"
+    redirect_to login_url
+  end
+
+  def correct_user
+    redirect_to root_url unless current_user? @user
+  end
 
   def user_params
     params.require(:user).permit :name, :email, :password,
       :password_confirmation
+  end
+
+  def admin_user
+    return if current_user.admin?
+    flash[:danger] = t "users.not_admin"
+    redirect_to root_url
+  end
+
+  def load_user
+    @user = User.find_by id: params[:id]
+    return if @user
+    flash[:warning] = t "static_pages.login.load_user_danger"
+    redirect_to root_path
   end
 end

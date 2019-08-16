@@ -5,6 +5,7 @@ en:
     news: "News"
     logo: "SAMPLE APP"
     account: "Account"
+    users_manager: "Users"
     profile: "Profile"
     settings: "Settings"
     log_out: "Log out"
@@ -53,6 +54,7 @@ en:
       signup_now: "Sign up now!"
       new_user: "New user"
       remember_me: "Remember me on this computer"
+      load_user_danger: "User not found"
     sign_up:
       name: "Sign Up"
       sign_up_page: "This will be a signup page for new users"
@@ -62,6 +64,22 @@ en:
       password: "Password"
       password_confirmation: "Password confirmation"
       submit: "Create my account"
+  users:
+    index:
+      all_users: "All users"
+    edit:
+      name: "Edit User"
+      h1: "Update your profile"
+      submit: "Save changes"
+      change: "change"
+      success: "Profile updated"
+      logged_in_user: "Please log in."
+    destroy:
+      success: "User deleted"
+      delete: "delete"
+      you_sure: "You sure?"
+      danger: "Delete fail"
+    not_admin: "You are not admin"
   english: "English"
   vietnamese: "Vietnames"
   name_app: "Ruby on Rails Tutorial Sample App"
