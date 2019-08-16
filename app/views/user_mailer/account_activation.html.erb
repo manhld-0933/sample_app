@@ -1,0 +1,5 @@
+<h1><%= t "layout.logo" %></h1>
+<p><%= t "mail.account_activation.hi" %> <%= @user.name %>,</p>
+<p><%= t "mail.account_activation.text_p" %></p>
+<%= link_to t("mail.account_activation.activation"),
+ edit_account_activation_url(id: @user.activation_token, email: @user.email) %>

@@ -5,9 +5,14 @@ class SessionsController < ApplicationController
   def new; end
 
   def create
-    return check_rmb_me @user if @user.authenticate params[:session][:password]
-    flash.now[:danger] = t "static_pages.login.danger"
-    render :new
+    if @user.authenticate params[:session][:password]
+      return check_rmb_me @user if @user.activated?
+      flash[:warning] = t "static_pages.login.not_active"
+      redirect_to root_url
+    else
+      flash.now[:danger] = t "static_pages.login.danger"
+      render :new
+    end
   end
 
   def destroy
@@ -28,10 +33,10 @@ class SessionsController < ApplicationController
   end
 
   def load_user
-    @user = User.find_by(email: params[:session][:email].downcase)
+    @user = User.find_by email: params[:session][:email].downcase
     return if @user
     flash[:warning] = t "static_pages.login.load_user_danger"
-    redirect_to root_path
+    redirect_to login_path
   end
 
   def check_logged_in
