@@ -3,3 +3,4 @@ validates:
   maximum_email: 255
   minimum_password: 6
 gravatar_size: 80
+remember_me: "1"
