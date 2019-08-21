@@ -55,6 +55,7 @@ en:
       new_user: "New user"
       remember_me: "Remember me on this computer"
       load_user_danger: "User not found"
+      not_active: "Account not activated. Check your email for the activation link."
     sign_up:
       name: "Sign Up"
       sign_up_page: "This will be a signup page for new users"
@@ -74,12 +75,22 @@ en:
       change: "change"
       success: "Profile updated"
       logged_in_user: "Please log in."
+    create:
+      check_mail: "Please check your email to activate your account."
     destroy:
       success: "User deleted"
       delete: "delete"
       you_sure: "You sure?"
       danger: "Delete fail"
     not_admin: "You are not admin"
+  mail:
+    account_activation:
+      subject: "Account activation"
+      activation: "Activation"
+      success: "Account activated!"
+      danger: "Invalid activation link"
+      hi: "Hi"
+      text_p: "Welcome to the Sample App! Click on the link below to activate your account:"
   english: "English"
   vietnamese: "Vietnames"
   name_app: "Ruby on Rails Tutorial Sample App"

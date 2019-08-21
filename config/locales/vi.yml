@@ -55,6 +55,8 @@ vi:
       new_user: "Người dùng mới"
       remember_me: "Duy trì đăng nhập"
       load_user_danger: "Không tìm thấy người dùng"
+      not_active: "Tài khoản chưa được kích hoạt. "
+      check_mail: "Kiểm tra liên kết kích hoạt trong email của bạn."
     sign_up:
       name: "Đăng Kí"
       sign_up_page: "Đây sẽ là trang đăng kí cho người dùng mới"
@@ -74,12 +76,22 @@ vi:
       change: "Thay đổi"
       success: "Hồ sơ đã được cập nhật"
       logged_in_user: "Vui lòng đăng nhập."
+    create:
+      check_mail: "Vui lòng kiểm tra email của bạn đê kích hoạt tài khoản!"
     destroy:
       success: "Xóa thành công"
       delete: "Xóa"
       you_sure: "Bạn chắc chứ?"
       danger: "Xóa không thành công"
     not_admin: "Bạn không phải là người quản trị"
+  mail:
+    account_activation:
+      subject: "Kích hoạt tài khoản"
+      activation: "Kích hoạt"
+      success: "Kích hoạt tài khoản thành công!"
+      danger: "Liên kết kích hoạt tài khoản không hợp lệ"
+      hi: "Xin chào"
+      text_p: "Chào mừng đến với Ứng Dụng Mẫu! Nhấn vào liên kết để kích hoạt tài khoản của bạn."
   english: "Tiếng Anh"
   vietnamese: "Tiếng Việt"
   sample_app: "Ứng Dụng Mẫu"

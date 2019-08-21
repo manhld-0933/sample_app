@@ -5,10 +5,15 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @users = User.paginate page: params[:page], per_page: Settings.index_page
+    @users = User.activated.paginate page: params[:page],
+                                         per_page: Settings.index_page
   end
 
-  def show; end
+  def show
+    return if @user.activated?
+    flash[:danger] = t "static_pages.home.user_error"
+    redirect_to root_path
+  end
 
   def new
     @user = User.new
@@ -17,9 +22,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t "static_pages.sign_up.success"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t("users.create.check_mail")
+      redirect_to root_url
     else
       render :new
     end
@@ -42,7 +47,7 @@ class UsersController < ApplicationController
     else
       flash[:danger] = t "users.destroy.danger"
     end
-      redirect_to users_url
+    redirect_to users_url
   end
 
   private
