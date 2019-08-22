@@ -1,0 +1,4 @@
+vi:
+  micropost:
+    alert:
+      maxium_pickture: "Kích thước tối đa là 5MB. Vui lòng chọn một tệp nhỏ hơn"
