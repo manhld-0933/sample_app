@@ -49,4 +49,12 @@ module SessionsHelper
   def store_location
     session[:forwarding_url] = request.original_url if request.get?
   end
+
+  def follow_user
+    current_user.active_relationships.build
+  end
+
+  def user_unfollow user_id
+    current_user.active_relationships.find_by followed_id: user_id
+  end
 end

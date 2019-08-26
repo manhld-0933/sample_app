@@ -10,8 +10,8 @@ class UsersController < ApplicationController
   end
 
   def show
-    @microposts = @user.microposts.paginate(page: params[:page],
-      per_page: Settings.micropost_per_page).order_desc
+    @microposts = @user.microposts.order_desc.paginate(page: params[:page],
+      per_page: Settings.micropost_per_page)
     return if @user.activated?
     flash[:danger] = t "static_pages.home.user_error"
     redirect_to root_path
@@ -50,6 +50,20 @@ class UsersController < ApplicationController
       flash[:danger] = t "users.destroy.danger"
     end
     redirect_to users_url
+  end
+
+  def following
+    @title = t "relationship.following"
+    @users = @user.following.paginate page: params[:page],
+      per_page: Settings.following_per_page
+    render :show_follow
+  end
+
+  def followers
+    @title = t "relationship.followers"
+    @users = @user.followers.paginate page: params[:page],
+      per_page: Settings.followers_per_page
+    render :show_follow
   end
 
   private

@@ -102,6 +102,11 @@ en:
     maxium_size: "Maximum file size is 5MB. Please choose a smaller file."
     you_sure: "You sure?"
     post: "Post"
+  relationship:
+    following: "Following"
+    followers: "Followers"
+    follow: "Follow"
+    unfollow: "Unfollow"
   forgot_pass:
     name: "Forgot password"
     submit: "Send"
